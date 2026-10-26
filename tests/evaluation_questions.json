@@ -1,0 +1,242 @@
+[
+  {
+    "id": "q_01",
+    "oracle_id": "paired_01",
+    "screenshot": "oracle/screenshot/paired_01.png",
+    "clinical_domain": "Kardiyoloji (Hipertansiyon)",
+    "question": "Hipertansiyon polikliniğinde yeni bir antihipertansif ilacın aynı hastalarda tedavi öncesi ve sonrası sistolik kan basıncını düşürmedeki etkisini tek yönlü eşleştirilmiş t-testi ile araştıracağız. Beklenen etki büyüklüğü dz = 0.5, tip I hata düzeyi alfa = 0.05 ve hedef istatistiksel güç = 0.95 olduğuna göre çalışmaya kaç hasta alınmalıdır?",
+    "question_en": "In a hypertension clinic, we will evaluate the blood-pressure-lowering effect of a new antihypertensive drug before and after treatment in the same patients using a one-tailed matched pairs t-test. Given expected effect size dz = 0.5, alpha = 0.05, and target statistical power = 0.95, how many patients are required?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 1,
+      "dz": 0.5,
+      "alpha": 0.05,
+      "power": 0.95
+    },
+    "expected_output": {
+      "n_total": 45,
+      "df": 44,
+      "ncp": 3.3541020,
+      "critical_t": 1.6802300,
+      "actual_power": 0.9512400
+    }
+  },
+  {
+    "id": "q_02",
+    "oracle_id": "paired_02",
+    "screenshot": "oracle/screenshot/paired_02.png",
+    "clinical_domain": "Endokrinoloji (Tip 2 Diyabet)",
+    "question": "Tip 2 diyabetli aynı olgularda 12 haftalık GLP-1 reseptör agonisti tedavisi öncesi ve sonrası HbA1c düzeylerindeki değişimi çift yönlü eşleştirilmiş örneklem t-testi ile incelemek istiyoruz. Etki büyüklüğü dz = 0.5, anlamlılık düzeyi alfa = 0.05 ve güç = 0.80 için gereken toplam hasta sayısı nedir?",
+    "question_en": "We want to examine HbA1c changes before and after 12 weeks of GLP-1 receptor agonist therapy in the same patients with Type 2 diabetes using a two-tailed paired t-test. For effect size dz = 0.5, alpha = 0.05, and power = 0.80, what is the required total sample size?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 2,
+      "dz": 0.5,
+      "alpha": 0.05,
+      "power": 0.80
+    },
+    "expected_output": {
+      "n_total": 34,
+      "df": 33,
+      "ncp": 2.9154759,
+      "critical_t": 2.0345153,
+      "actual_power": 0.8077775
+    }
+  },
+  {
+    "id": "q_03",
+    "oracle_id": "paired_03",
+    "screenshot": "oracle/screenshot/paired_03.png",
+    "clinical_domain": "Algoloji / Fizik Tedavi (Kronik Bel Ağrısı)",
+    "question": "Kronik bel ağrısı olan aynı hastalarda kuru iğneleme uygulaması öncesi ve sonrası VAS ağrı skorlarını çift kuyruklu bağımlı iki ortalama t-testi ile karşılaştıracağız. Etki büyüklüğü dz = 0.5, alfa = 0.05 ve güç = 0.90 hedeflendiğinde kaç hasta (çift ölçüm) gereklidir?",
+    "question_en": "We will compare VAS pain scores before and after dry needling in the same patients with chronic low back pain using a two-tailed dependent means t-test. With effect size dz = 0.5, alpha = 0.05, and power = 0.90, how many matched pairs are needed?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 2,
+      "dz": 0.5,
+      "alpha": 0.05,
+      "power": 0.90
+    },
+    "expected_output": {
+      "n_total": 44,
+      "df": 43,
+      "ncp": 3.3166248,
+      "critical_t": 2.0166922,
+      "actual_power": 0.9000306
+    }
+  },
+  {
+    "id": "q_04",
+    "oracle_id": "paired_04",
+    "screenshot": "oracle/screenshot/paired_04.png",
+    "clinical_domain": "Göğüs Hastalıkları (KOAH Rehabilitasyonu)",
+    "question": "KOAH tanılı aynı hastalarda pulmoner rehabilitasyon programı öncesi ve sonrası 6 dakika yürüme testi mesafesini iki yönlü eşleştirilmiş t-testi ile değerlendireceğiz. dz = 0.5, alfa = 0.05 ve güç = 0.95 olması için örneklem büyüklüğü kaç olmalıdır?",
+    "question_en": "We will evaluate 6-minute walk distance before and after pulmonary rehabilitation in the same COPD patients using a two-tailed paired t-test. For dz = 0.5, alpha = 0.05, and power = 0.95, what should the total sample size be?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 2,
+      "dz": 0.5,
+      "alpha": 0.05,
+      "power": 0.95
+    },
+    "expected_output": {
+      "n_total": 54,
+      "df": 53,
+      "ncp": 3.6742346,
+      "critical_t": 2.0057460,
+      "actual_power": 0.9502120
+    }
+  },
+  {
+    "id": "q_05",
+    "oracle_id": "paired_05",
+    "screenshot": "oracle/screenshot/paired_05.png",
+    "clinical_domain": "Nöroloji (Migren Profilaksisi)",
+    "question": "Episodik migrenli aynı hastalarda magnezyum takviyesi öncesi ve sonrası aylık atak sıklığındaki azalmayı tek kuyruklu eşleştirilmiş t-testi ile sınayacağız. Küçük bir etki büyüklüğü dz = 0.2, alfa = 0.05 ve güç = 0.80 için gereken hasta sayısı kaçtır?",
+    "question_en": "We will test the reduction in monthly attack frequency before and after magnesium supplementation in the same episodic migraine patients using a one-tailed paired t-test. For small effect size dz = 0.2, alpha = 0.05, and power = 0.80, how many patients are required?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 1,
+      "dz": 0.2,
+      "alpha": 0.05,
+      "power": 0.80
+    },
+    "expected_output": {
+      "n_total": 156,
+      "df": 155,
+      "ncp": 2.4979992,
+      "critical_t": 1.6547438,
+      "actual_power": 0.8001673
+    }
+  },
+  {
+    "id": "q_06",
+    "oracle_id": "paired_06",
+    "screenshot": "oracle/screenshot/paired_06.png",
+    "clinical_domain": "Psikiyatri (Bilişsel Davranışçı Terapi)",
+    "question": "Anksiyete bozukluğu olan aynı bireylerde terapi öncesi ve sonrası Beck Anksiyete Ölçeği puanlarını çift yönlü eşleştirilmiş t-testi ile karşılaştıracağız. Etki büyüklüğü dz = 0.2, alfa = 0.05 ve güç = 0.80 parametreleriyle çalışmaya kaç katılımcı dahil edilmelidir?",
+    "question_en": "We will compare Beck Anxiety Inventory scores before and after therapy in the same individuals with anxiety disorder using a two-tailed paired t-test. With effect size dz = 0.2, alpha = 0.05, and power = 0.80, how many participants should be enrolled?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 2,
+      "dz": 0.2,
+      "alpha": 0.05,
+      "power": 0.80
+    },
+    "expected_output": {
+      "n_total": 199,
+      "df": 198,
+      "ncp": 2.8213472,
+      "critical_t": 1.9720175,
+      "actual_power": 0.8016910
+    }
+  },
+  {
+    "id": "q_07",
+    "oracle_id": "paired_07",
+    "screenshot": "oracle/screenshot/paired_07.png",
+    "clinical_domain": "Nefroloji (Kronik Böbrek Hastalığı)",
+    "question": "Kronik böbrek hastalığı olan aynı hastalarda diyet müdahalesi öncesi ve sonrası serum fosfor düzeyindeki düşüşü tek yönlü eşleştirilmiş t-testi ile analiz edeceğiz. dz = 0.2, alfa = 0.01 ve güç = 0.90 koşullarında örneklem büyüklüğü kaç olmalıdır?",
+    "question_en": "We will analyze the decrease in serum phosphorus before and after dietary intervention in the same chronic kidney disease patients using a one-tailed paired t-test. Under dz = 0.2, alpha = 0.01, and power = 0.90, what sample size is needed?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 1,
+      "dz": 0.2,
+      "alpha": 0.01,
+      "power": 0.90
+    },
+    "expected_output": {
+      "n_total": 329,
+      "df": 328,
+      "ncp": 3.6276714,
+      "critical_t": 2.3377704,
+      "actual_power": 0.9008371
+    }
+  },
+  {
+    "id": "q_08",
+    "oracle_id": "paired_08",
+    "screenshot": "oracle/screenshot/paired_08.png",
+    "clinical_domain": "Ortopedi (Artroskopik Cerrahi)",
+    "question": "Rotator manşet tamiri yapılan aynı hastalarda ameliyat öncesi ve sonrası omuz fonksiyon skorlarını çift yönlü eşleştirilmiş t-testi ile inceleyeceğiz. dz = 0.2, alfa = 0.01 ve güç = 0.90 için gereken toplam hasta sayısı nedir?",
+    "question_en": "We will examine shoulder function scores before and after surgery in the same patients undergoing rotator cuff repair using a two-tailed paired t-test. For dz = 0.2, alpha = 0.01, and power = 0.90, what is the required total number of patients?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "a-priori",
+      "tails": 2,
+      "dz": 0.2,
+      "alpha": 0.01,
+      "power": 0.90
+    },
+    "expected_output": {
+      "n_total": 376,
+      "df": 375,
+      "ncp": 3.8781439,
+      "critical_t": 2.5890032,
+      "actual_power": 0.9006277
+    }
+  },
+  {
+    "id": "q_09",
+    "oracle_id": "paired_28",
+    "screenshot": "oracle/screenshot/paired_28.png",
+    "clinical_domain": "Aile Hekimliği (Tarama Çalışması - Post-hoc)",
+    "question": "Tamamlanmış bir klinik çalışmada 546 hastada müdahale öncesi ve sonrası biyobelirteç farkı tek yönlü eşleştirilmiş t-testi ile değerlendirilmiştir. Gözlenen etki büyüklüğü dz = 0.11 ve anlamlılık düzeyi alfa = 0.18 olduğuna göre bu çalışmanın post-hoc gerçekleşen gücü nedir?",
+    "question_en": "In a completed clinical study of 546 matched pairs, biomarker change before and after intervention was evaluated with a one-tailed paired t-test. Given observed effect size dz = 0.11 and alpha = 0.18, what is the post-hoc achieved statistical power?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "post-hoc",
+      "tails": 1,
+      "dz": 0.11,
+      "alpha": 0.18,
+      "n_total": 546
+    },
+    "expected_output": {
+      "n_total": 546,
+      "df": 545,
+      "ncp": 2.5703307,
+      "critical_t": 0.9161374,
+      "actual_power": 0.9509339
+    }
+  },
+  {
+    "id": "q_10",
+    "oracle_id": "paired_30",
+    "screenshot": "oracle/screenshot/paired_30.png",
+    "clinical_domain": "İç Hastalıkları (Retrospektif Kohort - Post-hoc)",
+    "question": "Retrospektif olarak incelenen 546 olguda tedavi öncesi ve sonrası lipid profili değişimi çift yönlü eşleştirilmiş t-testi ile analiz edilmiştir. Etki büyüklüğü dz = 0.11 ve alfa = 0.18 için çalışmanın post-hoc istatistiksel gücü kaçtır?",
+    "question_en": "In 546 patients analyzed retrospectively, lipid profile changes before and after treatment were tested with a two-tailed paired t-test. For effect size dz = 0.11 and alpha = 0.18, what is the post-hoc statistical power of the study?",
+    "expected_test": "t-paired",
+    "expected_params": {
+      "test": "t-paired",
+      "mode": "post-hoc",
+      "tails": 2,
+      "dz": 0.11,
+      "alpha": 0.18,
+      "n_total": 546
+    },
+    "expected_output": {
+      "n_total": 546,
+      "df": 545,
+      "ncp": 2.5703307,
+      "critical_t": 1.3424779,
+      "actual_power": 0.8902204
+    }
+  }
+]

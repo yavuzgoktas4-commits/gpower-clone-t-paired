@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpower-clone"
+version = "1.0.0"
+description = "Clean-room statistical power calculation engine and CLI for K2 family: t-paired"
+readme = "SPEC.md"
+requires-python = ">=3.10"
+dependencies = [
+    "scipy>=1.10.0",
+]
+
+[project.scripts]
+gpower-clone = "src.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
